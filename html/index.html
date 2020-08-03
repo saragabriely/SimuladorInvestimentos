@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8"> <!--  Dicionario utilizado - ->	
+		<meta name="viewport" content="width-device-width"> -->
+		<title>Simulador de Investimentos</title>	
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" >
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1>Simulador de Investimentos</h1>
+			</div>
+		</header>
+
+
+		<main>
+			<p>Simule seus investimentos PRÉ-FIXADOS!</p>
+
+			<div class="capturaValores">				
+
+				<form class="input-valores" id="input-valores">
+					<label for="valor-inicial">Valor Inicial (R$)</label>
+					<input type="text" id="valor-inicial" name="valor-inicial" class="valor-inicical">
+
+					<label for="aporte-mensal">Aporte Mensal (R$)</label>
+					<input type="text" id="aporte-mensal" name="aporte-mensal">
+
+					<label for="meses">Tempo (meses)</label>
+					<input type="text" id="meses" required="">
+
+					<label for="taxa-juros">Taxa de Juros (%)</label>
+					<input type="text" id="taxa-juros" required="">
+
+					<button id="botao-calcular" class="calcular">Calcular</button>
+				</form> 
+			</div>
+
+			<div class="resultados">
+				<label>Valor Total</label>
+				<label class="resultadoValor" id="resultado-total">R$ </label>
+
+				<label>Total Arrecadado</label>
+				<label class="resultadoValor" id="total-arrecadado">R$ </label>
+
+				<label>IR</label>
+				<label class="resultadoValor" id="valor-ir">R$ </label>
+
+				<label>IOF</label>
+				<label class="resultadoValor">R$ </label>
+
+				<label>Valor com desconto (Impostos)</label>
+				<label class="resultadoValor" id="valor-com-desconto">R$ </label>
+			</div>
+
+
+		</main>
+
+		<footer> 
+			<!--<img src="../images/logo-footer.png">-->
+			<p class="copyright">&copy; Copyright Simulador de Investimentos - 2020</p>
+		</footer>
+
+		<script src="../js/index.js"></script>
+
+	</body>
+</html>

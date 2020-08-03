@@ -1,0 +1,129 @@
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: linear-gradient(purple, #551A8B);
+}
+
+header h1 {
+	height: 60px;
+	padding: 35px 20px 0;
+	font-size: 28px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+main{
+	position: relative; /*permitiu que o menu ficasse dentro da caixa*/
+	width: 940px; /*largura padrão utilizada na web*/
+	margin: 0 auto; /*auto - a margem para esq e dir será calculada automaticamente*/
+}
+
+main p{
+	padding: 40px 15px 0 0;
+}
+
+main p:first-child {
+	font-size: 25px;
+}
+
+.capturaValores, .resultados {
+	margin: 30px 0;
+} 
+
+.capturaValores {
+	display: inline-block;
+	width: 50%;
+	/*background: pink; */
+	height: 70%;
+	position: relative;
+}
+
+form {
+	display: inline-block;
+}
+
+form label {
+	padding: 20px 0 15px 0;
+	display: inline-block;
+}
+
+form input {
+	padding: 10px;
+	width: 80%;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px #CCCCCC;
+	font-size: 19px;
+}
+
+form label {
+	font-weight: bold;
+}
+
+.calcular { 
+	margin: 30px 5px 40px 0;	/*margin: topo direita baixo esquerda; (css) */
+	width: 81%;
+	padding: 15px 0;
+	border: none;
+	border-radius: 10px;
+	display: inline-block;
+	background: purple;
+	color: #FFFFFF;
+	font-size: 20px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.calcular:hover {
+	background: #FF1493;
+}
+
+
+.resultados {
+	display: inline-block;
+	width: 50%;
+	height: 73%;
+	border: 3px solid purple;
+	position: absolute;
+	padding: 0 0 0 20px;
+	font-size: 18.5px;
+}
+
+.resultados label {
+	display: block;
+	font-weight: bold;
+	padding: 0 0 0 15px; 
+}
+
+.resultados label:not(.resultadoValor) {
+	color: purple;
+	padding: 32px 0px 15px 15px; 
+}
+
+.resultadoValor {
+	margin: 0 5px 0 0;
+	position: center;
+}
+
+
+
+
+footer{
+	text-align: center;
+	background: url("../images/bckgFooter.png");
+	padding: 60px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
